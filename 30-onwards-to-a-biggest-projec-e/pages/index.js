@@ -102,6 +102,20 @@ export default HomePage();
 //NPM INSTALL MONGODB
 /**şimdi deploy etmek istiyoruz yani uygulamayı uzak bir yere koymak istiyoruz */
 /**versel next.js uygulamalarımızı barındırmamızı sağlar */
-/**GİT ADD .
+/**GİT ADD .    . çalışma dizinindeki tüm dosyalar hedefler yani bu dizindeki tüm dosyaları sahneleme 
+ * alanına ekler sahneleme alanı commit yapmadan önce hangi dosyaların commmit edileceğini 
+ * belirlediğimiz geçici alan
  * GİT COMMİT -M "ready for deployment"
+ * GİT REMOTE ADD ORİGİN https://github.com/adem57493/nextjs-course-demo.git   git add remote komutu  
+ * git deposuna yeni bir remote(uzak depo) origin adında ekler uzak depo yerel olarak çalıştığımız
+ *  projeyi bir sunucuya bağlamamızı sağlar https://github.com/adem57493/nextjs-course-demo.git  adresi 
+ * bu deponun uzak sunucu adresi olarak görev alır
+ * GİT PUSH --ALL
+ * 
+ * 
+ * vercel sadece next.js için bir barındırma sağlar vercel ile npm run build yapmamıza gerek yok vercel bunu kendi yapar
+ * şimdi mongodb atlas'da network adress'e herkese izin ver add ıp adress de
+ * 
+ * değişikşik yaptık
+ * GİT ADD .
  */

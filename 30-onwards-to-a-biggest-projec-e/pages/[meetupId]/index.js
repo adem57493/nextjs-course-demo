@@ -33,12 +33,13 @@ export async function getStaticPaths() {/**dinamik değerlerin önceden olşturu
   client.close();
 
   return {
-    fallback: false,/**getStaticPaths tarafından döndürülmeyen herhangi bir rota için 404 sayfası 
+    fallback: 'blocking',/** fallback:true getStaticPaths tarafından döndürülmeyen herhangi bir rota için 404 sayfası 
     gösterilir sadece m1,m2 yolları erişilebilir olacak*/
     paths: meetups.map(meetup => ({ params: { meetupId: meetup._id.toString() } }))
     /**herbiri params özelliğine shp nesnelerden oluşan bir dizidir */
 
-  }
+  }/**fallback:'blocking' kullanıcı bir sayfayı talep ettiğinde o sayfa yoksa dinamik 
+  olarak oluşturmasını sağlar kullanıcı sayfa oluşturuluncaya kadar bekletilir block edilir */
 
 }
 
